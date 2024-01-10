@@ -51,8 +51,21 @@ algo4.textContent = result4;
 let algo5 = document.querySelector("#algo5");
 let result5 = "";
 
-for(let i = 0; i <= 10; i++) {
-  result5 = i;
+for(let i = 1; i <= 10; i++) {
+  result5 = result5 + i;
+  result5 * 10;
 }
 
 algo5.textContent = result5;
+
+
+// Algo' 6
+
+let algo6 = document.querySelector("#algo6");
+let result6 = "";
+
+for(let i = 0; i <= 10; i++) {
+  result6 = i;
+}
+
+algo6.textContent = result6;
