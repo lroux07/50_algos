@@ -1,71 +1,156 @@
-// Algo' 1
+function Algo1() {
+  let algoElement = document.querySelector("#algo1");
+  let result = "";
+  let space = "";
 
-let algo1 = document.querySelector("#algo1");
-let result1 = "";
+  for(let i = 0; i <= 10; i++) {
+    result = i;
+    space += " " + result;
+  }
 
-for(let i = 0; i <= 10; i++) {
-  result1 = result1 + " " + i;
+  algoElement.textContent = space;
 }
+Algo1();
 
-algo1.textContent = result1;
+function Algo2() {
+  let algoElement = document.querySelector("#algo2");
+  let result = "";
+  let space = "";
 
+  for(let i = 1; i < 100; i += 2) {
+    result = i;
+    space += " " + result;
+  }
 
-// Algo' 2
-
-let algo2 = document.querySelector("#algo2");
-let result2 = "";
-
-for(let i = 1; i < 100; i += 2) {
-  result2 = result2 + " " + i;
+  algoElement.textContent = space;
 }
+Algo2();
 
-algo2.textContent = result2;
+function Algo3() {
+  let algoElement = document.querySelector("#algo3");
+  let result = "";
+  let space = "";
 
+  for(let i = 1; i <= 10; i++) {
+    result = i * 7;
+    space += " " + result;
+  }
 
-// Algo' 3
-
-let algo3 = document.querySelector("#algo3");
-let result3 = "";
-
-for(let i = 1; i <= 10; i++) {
-  result3 = result3 + " " + i * 7;
+  algoElement.textContent = space;
 }
+Algo3();
 
-algo3.textContent = result3;
+function Algo4() {
+  let algoElement = document.querySelector("#algo4");
+  let result = "";
+
+  // for(let i = 1; i <= 10; i++) {
+  //   let line = "";
+  //   for(let j = 1; j <= 10; j++) {
+  //     line += i * j + " ";
+  //   }
+  //   result += line;
+  // }
+
+  for(let i = 1; i <= 10; i++) {
+    let line = [];
+    for(let j = 1; j <= 10; j++) {
+      line.push(i * j);
+    }
+    result += line + " - ";
+  }
 
 
-// Algo' 4
-
-let algo4 = document.querySelector("#algo4");
-let result4 = "";
-
-for(let i = 1; i <= 10; i++) {
-  result4 = result4 + i * 1 + " " + i * 2 + " " + i * 3 + " " + i * 4 + " " + i * 5 + " " + i * 6 + " " + i * 7 + " " + i * 8 + " " + i * 9 + " " + i * 10 + " ";
+  algoElement.textContent = result;
 }
+Algo4();
 
-algo4.textContent = result4;
+function Algo5() {
+  let algoElement = document.querySelector("#algo5");
+  let result = 0;
+  let space = "";
 
+  for(let i = 1; i <= 10; i++) {
+    result += i;
+    space = " " + result
+  }
 
-// Algo' 5
-
-let algo5 = document.querySelector("#algo5");
-let result5 = "";
-
-for(let i = 1; i <= 10; i++) {
-  result5 = result5 + i;
-  result5 * 10;
+  algoElement.textContent = space;
 }
+Algo5();
 
-algo5.textContent = result5;
+function Algo6() {
+  let algoElement = document.querySelector("#algo6");
+  let result = 1;
 
+  for(let i = 1; i <= 10; i++) {
+    result *= i;
+  }
 
-// Algo' 6
-
-let algo6 = document.querySelector("#algo6");
-let result6 = "";
-
-for(let i = 0; i <= 10; i++) {
-  result6 = i;
+  algoElement.textContent = result;
 }
+Algo6();
 
-algo6.textContent = result6;
+function Algo7() {
+  let algoElement = document.querySelector("#algo7");
+  let result = 0;
+
+  for(let i = 10; i <= 30; i += 2) {
+    result += i;
+  }
+
+  algoElement.textContent = result;
+}
+Algo7();
+
+
+// Celsius to Fahrenheit
+
+const celsiusInput = document.querySelector("#celsiusInput");
+
+celsiusInput.addEventListener("change", () => {
+  Algo8(celsiusInput.value);
+})
+
+const fahrenheitInput = document.querySelector("#fahrenheitInput");
+
+fahrenheitInput.addEventListener("change", () => {
+  Algo82(fahrenheitInput.value);
+})
+
+function Algo8(valueC) {
+  let algoElementC = document.querySelector("#c2f");
+  let fahrenheit;
+  let degC = " °F";
+  valueC
+
+  // Clacul:
+  // (celsius * 9/5) + 32
+  
+  let calculC2F = (valueC * 9/5) + 32;
+
+  if(valueC) {
+    algoElementC.textContent = calculC2F + degC;
+  } else if(valueC = " ") {
+    algoElementC.textContent = "Valeur en fahrenheit..."
+  }
+}
+Algo8();
+
+function Algo82(valueF) {
+  let algoElementF = document.querySelector("#f2c");
+  let degC = " °C";
+  valueF
+
+  // Clacul:
+  // (fahrenheit / 9/5) - 32
+  
+  let calculF2C = (valueF - 32) * 5/9;
+
+  if(valueF) {
+    algoElementF.textContent = calculF2C + degC;
+  } else if(valueF = " ") {
+    algoElementF.textContent = "Valeur en celsius..."
+  }
+}
+Algo82();
