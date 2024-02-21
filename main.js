@@ -110,13 +110,7 @@ const celsiusInput = document.querySelector("#celsiusInput");
 
 celsiusInput.addEventListener("change", () => {
   Algo8(celsiusInput.value);
-})
-
-const fahrenheitInput = document.querySelector("#fahrenheitInput");
-
-fahrenheitInput.addEventListener("change", () => {
-  Algo82(fahrenheitInput.value);
-})
+});
 
 function Algo8(valueC) {
   let algoElementC = document.querySelector("#c2f");
@@ -137,10 +131,19 @@ function Algo8(valueC) {
 }
 Algo8();
 
+
+// Fahrenheit to Celsius
+
+const fahrenheitInput = document.querySelector("#fahrenheitInput");
+
+fahrenheitInput.addEventListener("change", () => {
+  Algo82(fahrenheitInput.value);
+})
+
 function Algo82(valueF) {
+  valueF
   let algoElementF = document.querySelector("#f2c");
   let degC = " °C";
-  valueF
 
   // Clacul:
   // (fahrenheit / 9/5) - 32
