@@ -16,7 +16,7 @@ body {
   background-image: linear-gradient(rgba(239, 116, 255, 0.669), rgb(116, 116, 255, 0.669));
   min-height: 100dvh;
   scroll-behavior: smooth;
-
+  user-select: none;
 }
 
 h1 {

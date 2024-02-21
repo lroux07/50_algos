@@ -108,7 +108,7 @@ Algo7();
 
 const celsiusInput = document.querySelector("#celsiusInput");
 
-celsiusInput.addEventListener("change", () => {
+celsiusInput.addEventListener("input", () => {
   Algo8(celsiusInput.value);
 });
 
@@ -136,11 +136,11 @@ Algo8();
 
 const fahrenheitInput = document.querySelector("#fahrenheitInput");
 
-fahrenheitInput.addEventListener("change", () => {
-  Algo82(fahrenheitInput.value);
+fahrenheitInput.addEventListener("input", () => {
+  Algo9(fahrenheitInput.value);
 })
 
-function Algo82(valueF) {
+function Algo9(valueF) {
   valueF
   let algoElementF = document.querySelector("#f2c");
   let degC = " °C";
@@ -156,4 +156,29 @@ function Algo82(valueF) {
     algoElementF.textContent = "Valeur en celsius..."
   }
 }
-Algo82();
+Algo9();
+
+function Algo10() {
+  let tab = [1, 2, 3, 4, 5];
+  let algoElement = document.querySelector("#algo10");
+
+  let calculateTab = algoElement.textContent = tab.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+
+  algoElement.textContent = calculateTab;
+}
+Algo10();
+
+function Algo11() {
+  let tab = [1, 2, 3, 4, 5];
+  let algoElement = document.querySelector("#algo11");
+
+  let calculateTab = algoElement.textContent = tab.reduce(function (a, b) {
+    return a + b;
+  });
+  calculateTab /= tab.length
+
+  algoElement.textContent = calculateTab;
+}
+Algo11();
