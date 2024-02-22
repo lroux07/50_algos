@@ -185,6 +185,9 @@ Algo11();
 
 function Algo12(tab = [-2, -1, 0, 1, 2]) {
   let algoElement = document.querySelector("#algo12");
-  
+
+  for (let i = 0; i < tab.length; i++) {
+    algoElement.textContent = i + ": " + tab[i];
+  }
 }
 Algo12();
