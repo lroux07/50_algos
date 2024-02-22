@@ -1,5 +1,5 @@
 function Algo1() {
-  let algoElement = document.querySelector("#algo1");
+  const algoElement = document.querySelector("#algo1");
   let result = "";
   let space = "";
 
@@ -13,7 +13,7 @@ function Algo1() {
 Algo1();
 
 function Algo2() {
-  let algoElement = document.querySelector("#algo2");
+  const algoElement = document.querySelector("#algo2");
   let result = "";
   let space = "";
 
@@ -27,7 +27,7 @@ function Algo2() {
 Algo2();
 
 function Algo3() {
-  let algoElement = document.querySelector("#algo3");
+  const algoElement = document.querySelector("#algo3");
   let result = "";
   let space = "";
 
@@ -41,7 +41,7 @@ function Algo3() {
 Algo3();
 
 function Algo4() {
-  let algoElement = document.querySelector("#algo4");
+  const algoElement = document.querySelector("#algo4");
   let result = "";
 
   // for(let i = 1; i <= 10; i++) {
@@ -66,7 +66,7 @@ function Algo4() {
 Algo4();
 
 function Algo5() {
-  let algoElement = document.querySelector("#algo5");
+  const algoElement = document.querySelector("#algo5");
   let result = 0;
   let space = "";
 
@@ -80,7 +80,7 @@ function Algo5() {
 Algo5();
 
 function Algo6() {
-  let algoElement = document.querySelector("#algo6");
+  const algoElement = document.querySelector("#algo6");
   let result = 1;
 
   for(let i = 1; i <= 10; i++) {
@@ -92,7 +92,7 @@ function Algo6() {
 Algo6();
 
 function Algo7() {
-  let algoElement = document.querySelector("#algo7");
+  const algoElement = document.querySelector("#algo7");
   let result = 0;
 
   for(let i = 10; i <= 30; i += 2) {
@@ -113,7 +113,7 @@ celsiusInput.addEventListener("input", () => {
 });
 
 function Algo8(valueC) {
-  let algoElementC = document.querySelector("#c2f");
+  const algoElementC = document.querySelector("#c2f");
   let fahrenheit;
   let degC = " °F";
   valueC
@@ -142,7 +142,7 @@ fahrenheitInput.addEventListener("input", () => {
 
 function Algo9(valueF) {
   valueF
-  let algoElementF = document.querySelector("#f2c");
+  const algoElementF = document.querySelector("#f2c");
   let degC = " °C";
 
   // Clacul:
@@ -160,7 +160,7 @@ Algo9();
 
 function Algo10() {
   let tab = [1, 2, 3, 4, 5];
-  let algoElement = document.querySelector("#algo10");
+  const algoElement = document.querySelector("#algo10");
 
   let calculateTab = algoElement.textContent = tab.reduce(function (a, b) {
     return a + b;
@@ -172,7 +172,7 @@ Algo10();
 
 function Algo11() {
   let tab = [1, 2, 3, 4, 5];
-  let algoElement = document.querySelector("#algo11");
+  const algoElement = document.querySelector("#algo11");
 
   let calculateTab = algoElement.textContent = tab.reduce(function (a, b) {
     return a + b;
@@ -184,10 +184,12 @@ function Algo11() {
 Algo11();
 
 function Algo12(tab = [-2, -1, 0, 1, 2]) {
-  let algoElement = document.querySelector("#algo12");
+  const algoElement = document.querySelector("#algo12");
 
-  for (let i = 0; i < tab.length; i++) {
-    algoElement.textContent = i + ": " + tab[i];
-  }
+  // for (let i = 0; i < tab.length; i += 2) {
+  //   algoElement.textContent = tab[i];
+  // }
+
+  algoElement.textContent = "A faire plus tard"
 }
 Algo12();
