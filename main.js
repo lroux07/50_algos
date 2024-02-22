@@ -182,3 +182,9 @@ function Algo11() {
   algoElement.textContent = calculateTab;
 }
 Algo11();
+
+function Algo12(tab = [-2, -1, 0, 1, 2]) {
+  let algoElement = document.querySelector("#algo12");
+  
+}
+Algo12();
