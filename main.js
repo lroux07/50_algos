@@ -193,3 +193,11 @@ function Algo12(tab = [-2, -1, 0, 1, 2]) {
   algoElement.textContent = "A faire plus tard"
 }
 Algo12();
+
+
+
+function Algo13() {
+  const algoElement = document.querySelector("#algo13");
+  
+}
+Algo13();
